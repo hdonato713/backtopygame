@@ -108,7 +108,7 @@ class Enemy:
             "boss": (550, 45, 60, (235, 70, 210), 250),
         }
         hp, speed, radius, color, xp = data[kind]
-        self.max_hp = hp * scale
+        self.max_hp = 5 * hp * scale
         self.hp = self.max_hp
         self.speed, self.radius, self.color, self.xp = speed, radius, color, xp
         self.contact = 14 if kind != "boss" else 28
